@@ -156,51 +156,6 @@ Résultat : niveau_final + règle_déclenchée + résumé
 
 ---
 
-## 📋 Endpoints API
-
-### Authentification
-```
-POST /api/auth/login    → connexion (public)
-POST /api/auth/logout   → déconnexion (JWT requis)
-```
-
-### Triage (INFIRMIER uniquement)
-```
-POST /api/triage/start           → démarrer un triage (dialogue IA)
-POST /api/triage/respond         → répondre à une question de l'agent
-GET  /api/triage/result/{id}     → récupérer le résultat
-PUT  /api/triage/{id}/validate   → validation infirmière (niveau + motif)
-```
-
-### Historique (INFIRMIER)
-```
-GET    /api/history         → historique personnel de l'infirmière
-DELETE /api/history/{id}    → supprimer un triage
-GET    /api/history/export  → exporter en CSV
-```
-
-### Patients (MÉDECIN)
-```
-GET /api/patients        → tous les triages
-GET /api/patients/export → exporter en CSV
-```
-
-### Tableau de bord
-```
-GET /api/dashboard/stats → statistiques (INFIRMIER + MÉDECIN)
-```
-
-### Administration (ADMIN)
-```
-GET    /api/admin/users              → liste des comptes
-POST   /api/admin/users              → créer un compte
-PUT    /api/admin/users/{id}/role    → changer le rôle
-PUT    /api/admin/users/{id}/status  → activer/désactiver
-DELETE /api/admin/users/{id}         → supprimer un compte
-```
-
----
-
 ## 🛡️ Normes et conformité
 
 | Norme | Application dans MediFlow AI |
