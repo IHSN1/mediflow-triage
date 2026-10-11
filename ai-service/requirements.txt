@@ -1,0 +1,31 @@
+# --- Traitement de données / Machine Learning ---
+pandas
+numpy
+scikit-learn
+xgboost
+joblib
+scipy
+
+# --- Visualisation (matrice de confusion) ---
+matplotlib
+seaborn
+
+# --- Agent conversationnel (LangChain + Mistral) ---
+langchain
+langchain-mistralai
+langchain-core
+mistralai
+
+# --- Interface web ---
+streamlit
+
+# --- Base de données PostgreSQL (Neon) ---
+psycopg2-binary
+sqlalchemy
+
+# --- Configuration / variables d'environnement ---
+python-dotenv
+
+# --- Service HTTP exposé à Spring Boot (ai_service/main.py) ---
+fastapi
+uvicorn[standard]
